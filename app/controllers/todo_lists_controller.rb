@@ -38,7 +38,7 @@ class TodoListsController < ApplicationController
   end
 
   # PATCH/PUT /todo_lists/1
-  # PATCH/PUT /todo_lists/1.json
+  # PATCH/PUT /todo_lists/1.jsonclear
   def update
     respond_to do |format|
       if @todo_list.update(todo_list_params)
