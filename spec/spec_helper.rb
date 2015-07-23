@@ -19,6 +19,18 @@ RSpec.configure do |config|
   config.include FactoryGirl::Syntax::Methods
   config.include AuthenticationHelpers::Controller, type: :controller
   config.include AuthenticationHelpers::Feature, type: :feature
+  config.infer_spec_type_from_file_location!
+  
+  RSpec.configure do |c|
+        c.expose_current_running_example_as :example
+  end
+
+
+
+
+
+
+
 
   # ## Mock Framework
   #
